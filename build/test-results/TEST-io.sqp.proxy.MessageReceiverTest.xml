@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.sqp.proxy.MessageReceiverTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2015-09-23T16:39:09" hostname="ub-stefan" time="0.033">
+  <properties/>
+  <testcase name="continueMessageGetsHandled[0](Binary)" classname="io.sqp.proxy.MessageReceiverTest" time="0.002"/>
+  <testcase name="continueMessageGetsHandled[1](Text)" classname="io.sqp.proxy.MessageReceiverTest" time="0.001"/>
+  <testcase name="continueMessageWithoutNewFails" classname="io.sqp.proxy.MessageReceiverTest" time="0.0"/>
+  <testcase name="handlerWorksAfterResetAfterError" classname="io.sqp.proxy.MessageReceiverTest" time="0.002"/>
+  <testcase name="newMessageEmptyFails" classname="io.sqp.proxy.MessageReceiverTest" time="0.0"/>
+  <testcase name="newMessageFinalGetsHandled" classname="io.sqp.proxy.MessageReceiverTest" time="0.009"/>
+  <testcase name="newMessageInvalidTypeFails" classname="io.sqp.proxy.MessageReceiverTest" time="0.002"/>
+  <testcase name="newMessageNotFinalDoesntGetHandled" classname="io.sqp.proxy.MessageReceiverTest" time="0.001"/>
+  <testcase name="newUnfinishedMessageTwiceFails" classname="io.sqp.proxy.MessageReceiverTest" time="0.001"/>
+  <testcase name="twoMessages" classname="io.sqp.proxy.MessageReceiverTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

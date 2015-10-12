@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.sqp.client.SimpleQueryTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2015-09-23T16:39:11" hostname="ub-stefan" time="31.425">
+  <properties/>
+  <testcase name="SimpleQueryUpdateWorks" classname="io.sqp.client.SimpleQueryTest" time="0.006"/>
+  <testcase name="SimpleQueryWithWrongResultTypeThrows" classname="io.sqp.client.SimpleQueryTest" time="0.007"/>
+  <testcase name="SimpleQueryUpdateWorks" classname="io.sqp.client.SimpleQueryTest" time="0.006"/>
+  <testcase name="SimpleQueryWithWrongResultTypeThrows" classname="io.sqp.client.SimpleQueryTest" time="0.006"/>
+  <testcase name="SimpleQueryUpdateWorks" classname="io.sqp.client.SimpleQueryTest" time="0.007"/>
+  <testcase name="SimpleQueryWithWrongResultTypeThrows" classname="io.sqp.client.SimpleQueryTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

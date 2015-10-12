@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.sqp.client.TypeMappingTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2015-09-23T16:39:11" hostname="ub-stefan" time="31.738">
+  <properties/>
+  <testcase name="CanReceiveMappedTypeData" classname="io.sqp.client.TypeMappingTest" time="0.027"/>
+  <testcase name="CanRegisterTypeMapping" classname="io.sqp.client.TypeMappingTest" time="0.007"/>
+  <testcase name="CanSendMappedTypeData" classname="io.sqp.client.TypeMappingTest" time="0.017"/>
+  <testcase name="RegisteringUnavailableTypesResultsInException" classname="io.sqp.client.TypeMappingTest" time="0.016"/>
+  <testcase name="SendingMappedTypeOutOfBoundsFails" classname="io.sqp.client.TypeMappingTest" time="0.025"/>
+  <testcase name="CanReceiveMappedTypeData" classname="io.sqp.client.TypeMappingTest" time="0.039"/>
+  <testcase name="CanRegisterTypeMapping" classname="io.sqp.client.TypeMappingTest" time="0.005"/>
+  <testcase name="CanSendMappedTypeData" classname="io.sqp.client.TypeMappingTest" time="0.039"/>
+  <testcase name="RegisteringUnavailableTypesResultsInException" classname="io.sqp.client.TypeMappingTest" time="0.011"/>
+  <testcase name="SendingMappedTypeOutOfBoundsFails" classname="io.sqp.client.TypeMappingTest" time="0.023"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Sep 23, 2015 6:39:12 PM io.sqp.proxy.customtypes.CustomTypeMapper findMappingInRepo
+INFO: Didn't find any native type matching the schema in backend repository
+Sep 23, 2015 6:39:12 PM io.sqp.proxy.ClientSession handleError
+INFO: Handling an TypeMappingNotPossible error: No native type matches the provided schema.
+Sep 23, 2015 6:39:12 PM io.sqp.client.impl.SqpConnectionImpl handleError
+INFO: Handling Error: No native type matches the provided schema.
+io.sqp.client.exceptions.ErrorResponseException: No native type matches the provided schema.
+	at io.sqp.client.impl.MessageHandler.handleSqpMessage(MessageHandler.java:137)
+	at io.sqp.client.impl.MessageHandler.receiveStrMessage(MessageHandler.java:94)
+	at io.sqp.client.impl.MessageHandler$$Lambda$93/1280361408.onMessage(Unknown Source)
+	at org.glassfish.tyrus.core.TyrusSession.notifyMessageHandlers(TyrusSession.java:576)
+	at org.glassfish.tyrus.core.TyrusEndpointWrapper.onMessage(TyrusEndpointWrapper.java:871)
+	at org.glassfish.tyrus.core.TyrusWebSocket.onMessage(TyrusWebSocket.java:212)
+	at org.glassfish.tyrus.core.frame.TextFrame.respond(TextFrame.java:139)
+	at org.glassfish.tyrus.core.ProtocolHandler.process(ProtocolHandler.java:807)
+	at org.glassfish.tyrus.client.TyrusClientEngine$TyrusReadHandler.handle(TyrusClientEngine.java:747)
+	at org.glassfish.tyrus.container.grizzly.client.GrizzlyClientFilter$ProcessTask.execute(GrizzlyClientFilter.java:476)
+	at org.glassfish.tyrus.container.grizzly.client.TaskProcessor.processTask(TaskProcessor.java:114)
+	at org.glassfish.tyrus.container.grizzly.client.TaskProcessor.processTask(TaskProcessor.java:91)
+	at org.glassfish.tyrus.container.grizzly.client.GrizzlyClientFilter.handleRead(GrizzlyClientFilter.java:272)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:561)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.lang.Thread.run(Thread.java:745)
+
+Sep 23, 2015 6:39:12 PM io.sqp.proxy.ClientSession handleError
+INFO: Handling an ValidationFailed error: Validation of data failed: com.github.fge.jsonschema.core.report.ListProcessingReport: failure
+--- BEGIN MESSAGES ---
+error: numeric instance is lower than the required minimum (minimum: 1, found: 0)
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/items/1"}
+    instance: {"pointer":"/1"}
+    domain: "validation"
+    keyword: "minimum"
+    minimum: 1
+    found: 0
+---  END MESSAGES  ---
+
+Sep 23, 2015 6:39:12 PM io.sqp.client.impl.SqpConnectionImpl handleError
+INFO: Handling Error: Validation of data failed: com.github.fge.jsonschema.core.report.ListProcessingReport: failure
+--- BEGIN MESSAGES ---
+error: numeric instance is lower than the required minimum (minimum: 1, found: 0)
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/items/1"}
+    instance: {"pointer":"/1"}
+    domain: "validation"
+    keyword: "minimum"
+    minimum: 1
+    found: 0
+---  END MESSAGES  ---
+
+io.sqp.client.exceptions.ErrorResponseException: Validation of data failed: com.github.fge.jsonschema.core.report.ListProcessingReport: failure
+--- BEGIN MESSAGES ---
+error: numeric instance is lower than the required minimum (minimum: 1, found: 0)
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/items/1"}
+    instance: {"pointer":"/1"}
+    domain: "validation"
+    keyword: "minimum"
+    minimum: 1
+    found: 0
+---  END MESSAGES  ---
+
+	at io.sqp.client.impl.MessageHandler.handleSqpMessage(MessageHandler.java:137)
+	at io.sqp.client.impl.MessageHandler.receiveStrMessage(MessageHandler.java:94)
+	at io.sqp.client.impl.MessageHandler$$Lambda$93/1280361408.onMessage(Unknown Source)
+	at org.glassfish.tyrus.core.TyrusSession.notifyMessageHandlers(TyrusSession.java:576)
+	at org.glassfish.tyrus.core.TyrusEndpointWrapper.onMessage(TyrusEndpointWrapper.java:871)
+	at org.glassfish.tyrus.core.TyrusWebSocket.onMessage(TyrusWebSocket.java:212)
+	at org.glassfish.tyrus.core.frame.TextFrame.respond(TextFrame.java:139)
+	at org.glassfish.tyrus.core.ProtocolHandler.process(ProtocolHandler.java:807)
+	at org.glassfish.tyrus.client.TyrusClientEngine$TyrusReadHandler.handle(TyrusClientEngine.java:747)
+	at org.glassfish.tyrus.container.grizzly.client.GrizzlyClientFilter$ProcessTask.execute(GrizzlyClientFilter.java:476)
+	at org.glassfish.tyrus.container.grizzly.client.TaskProcessor.processTask(TaskProcessor.java:114)
+	at org.glassfish.tyrus.container.grizzly.client.TaskProcessor.processTask(TaskProcessor.java:91)
+	at org.glassfish.tyrus.container.grizzly.client.GrizzlyClientFilter.handleRead(GrizzlyClientFilter.java:272)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:561)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.lang.Thread.run(Thread.java:745)
+
+Sep 23, 2015 6:39:43 PM io.sqp.proxy.customtypes.CustomTypeMapper findMappingInRepo
+INFO: Didn't find any native type matching the schema in backend repository
+Sep 23, 2015 6:39:43 PM io.sqp.proxy.ClientSession handleError
+INFO: Handling an TypeMappingNotPossible error: No native type matches the provided schema.
+Sep 23, 2015 6:39:43 PM io.sqp.client.impl.SqpConnectionImpl handleError
+INFO: Handling Error: No native type matches the provided schema.
+io.sqp.client.exceptions.ErrorResponseException: No native type matches the provided schema.
+	at io.sqp.client.impl.MessageHandler.handleSqpMessage(MessageHandler.java:137)
+	at io.sqp.client.impl.MessageHandler.receiveStrMessage(MessageHandler.java:94)
+	at io.sqp.client.impl.MessageHandler$$Lambda$93/1280361408.onMessage(Unknown Source)
+	at org.glassfish.tyrus.core.TyrusSession.notifyMessageHandlers(TyrusSession.java:576)
+	at org.glassfish.tyrus.core.TyrusEndpointWrapper.onMessage(TyrusEndpointWrapper.java:871)
+	at org.glassfish.tyrus.core.TyrusWebSocket.onMessage(TyrusWebSocket.java:212)
+	at org.glassfish.tyrus.core.frame.TextFrame.respond(TextFrame.java:139)
+	at org.glassfish.tyrus.core.ProtocolHandler.process(ProtocolHandler.java:807)
+	at org.glassfish.tyrus.client.TyrusClientEngine$TyrusReadHandler.handle(TyrusClientEngine.java:747)
+	at org.glassfish.tyrus.container.grizzly.client.GrizzlyClientFilter$ProcessTask.execute(GrizzlyClientFilter.java:476)
+	at org.glassfish.tyrus.container.grizzly.client.TaskProcessor.processTask(TaskProcessor.java:114)
+	at org.glassfish.tyrus.container.grizzly.client.TaskProcessor.processTask(TaskProcessor.java:91)
+	at org.glassfish.tyrus.container.grizzly.client.GrizzlyClientFilter.handleRead(GrizzlyClientFilter.java:272)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:561)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.lang.Thread.run(Thread.java:745)
+
+Sep 23, 2015 6:39:43 PM io.sqp.proxy.ClientSession handleError
+INFO: Handling an ValidationFailed error: Validation of data failed: com.github.fge.jsonschema.core.report.ListProcessingReport: failure
+--- BEGIN MESSAGES ---
+error: numeric instance is lower than the required minimum (minimum: 1, found: 0)
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/items/1"}
+    instance: {"pointer":"/1"}
+    domain: "validation"
+    keyword: "minimum"
+    minimum: 1
+    found: 0
+---  END MESSAGES  ---
+
+Sep 23, 2015 6:39:43 PM io.sqp.client.impl.SqpConnectionImpl handleError
+INFO: Handling Error: Validation of data failed: com.github.fge.jsonschema.core.report.ListProcessingReport: failure
+--- BEGIN MESSAGES ---
+error: numeric instance is lower than the required minimum (minimum: 1, found: 0)
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/items/1"}
+    instance: {"pointer":"/1"}
+    domain: "validation"
+    keyword: "minimum"
+    minimum: 1
+    found: 0
+---  END MESSAGES  ---
+
+io.sqp.client.exceptions.ErrorResponseException: Validation of data failed: com.github.fge.jsonschema.core.report.ListProcessingReport: failure
+--- BEGIN MESSAGES ---
+error: numeric instance is lower than the required minimum (minimum: 1, found: 0)
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/items/1"}
+    instance: {"pointer":"/1"}
+    domain: "validation"
+    keyword: "minimum"
+    minimum: 1
+    found: 0
+---  END MESSAGES  ---
+
+	at io.sqp.client.impl.MessageHandler.handleSqpMessage(MessageHandler.java:137)
+	at io.sqp.client.impl.MessageHandler.receiveStrMessage(MessageHandler.java:94)
+	at io.sqp.client.impl.MessageHandler$$Lambda$93/1280361408.onMessage(Unknown Source)
+	at org.glassfish.tyrus.core.TyrusSession.notifyMessageHandlers(TyrusSession.java:576)
+	at org.glassfish.tyrus.core.TyrusEndpointWrapper.onMessage(TyrusEndpointWrapper.java:871)
+	at org.glassfish.tyrus.core.TyrusWebSocket.onMessage(TyrusWebSocket.java:212)
+	at org.glassfish.tyrus.core.frame.TextFrame.respond(TextFrame.java:139)
+	at org.glassfish.tyrus.core.ProtocolHandler.process(ProtocolHandler.java:807)
+	at org.glassfish.tyrus.client.TyrusClientEngine$TyrusReadHandler.handle(TyrusClientEngine.java:747)
+	at org.glassfish.tyrus.container.grizzly.client.GrizzlyClientFilter$ProcessTask.execute(GrizzlyClientFilter.java:476)
+	at org.glassfish.tyrus.container.grizzly.client.TaskProcessor.processTask(TaskProcessor.java:114)
+	at org.glassfish.tyrus.container.grizzly.client.TaskProcessor.processTask(TaskProcessor.java:91)
+	at org.glassfish.tyrus.container.grizzly.client.GrizzlyClientFilter.handleRead(GrizzlyClientFilter.java:272)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:561)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.lang.Thread.run(Thread.java:745)
+
+]]></system-err>
+</testsuite>

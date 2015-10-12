@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" tests="27" skipped="0" failures="0" errors="0" timestamp="2015-09-23T16:39:09" hostname="ub-stefan" time="0.012">
+  <properties/>
+  <testcase name="IntMatchesNumber" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.003"/>
+  <testcase name="NumberDoesNotMatchInt" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.0"/>
+  <testcase name="NumberMaxExclusiveMatch" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.001"/>
+  <testcase name="NumberMaxExclusiveMatch2" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.0"/>
+  <testcase name="NumberMaxMatch" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.0"/>
+  <testcase name="NumberMaxMisMatch" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.0"/>
+  <testcase name="NumberMaxMissingMatch" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.0"/>
+  <testcase name="NumberMaxMissingMisMatch" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.0"/>
+  <testcase name="NumberMaxSameExclusiveMatch" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.0"/>
+  <testcase name="NumberMaxSameExclusiveMisMatch" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.0"/>
+  <testcase name="NumberMaxSameMatch" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.0"/>
+  <testcase name="NumberMinExclusiveMatch" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.0"/>
+  <testcase name="NumberMinExclusiveMatch2" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.0"/>
+  <testcase name="NumberMinMatch" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.0"/>
+  <testcase name="NumberMinMisMatch" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.001"/>
+  <testcase name="NumberMinMissingMatch" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.0"/>
+  <testcase name="NumberMinMissingMisMatch" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.0"/>
+  <testcase name="NumberMinSameExclusiveMatch" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.0"/>
+  <testcase name="NumberMinSameExclusiveMisMatch" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.001"/>
+  <testcase name="NumberMinSameMatch" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.0"/>
+  <testcase name="NumberMultipleOfIsSameMatch" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.0"/>
+  <testcase name="NumberMultipleOfMatch" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.001"/>
+  <testcase name="NumberMultipleOfMisMatch" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.0"/>
+  <testcase name="NumberMultipleOfMissing" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.0"/>
+  <testcase name="NumberMultipleOfMissingMisMatch" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.0"/>
+  <testcase name="SimpleIntegerMatch" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.0"/>
+  <testcase name="SimpleNumberMatch" classname="io.sqp.schemamatcher.typematchers.NumberTypeMatcherTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

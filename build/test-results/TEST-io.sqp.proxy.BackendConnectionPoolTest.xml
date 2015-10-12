@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.sqp.proxy.BackendConnectionPoolTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2015-09-23T16:39:09" hostname="ub-stefan" time="0.076">
+  <properties/>
+  <testcase name="canCloseConnection" classname="io.sqp.proxy.BackendConnectionPoolTest" time="0.03"/>
+  <testcase name="canCreateConnection" classname="io.sqp.proxy.BackendConnectionPoolTest" time="0.008"/>
+  <testcase name="canOpenMultipleConnections" classname="io.sqp.proxy.BackendConnectionPoolTest" time="0.006"/>
+  <testcase name="canQueueConnection" classname="io.sqp.proxy.BackendConnectionPoolTest" time="0.009"/>
+  <testcase name="closingQueuedConnectionRemovesItFromQueue" classname="io.sqp.proxy.BackendConnectionPoolTest" time="0.008"/>
+  <testcase name="failIfQueueFull" classname="io.sqp.proxy.BackendConnectionPoolTest" time="0.014"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Sep 23, 2015 6:39:09 PM io.sqp.proxy.BackendConnectionPool createBackend
+INFO: Created BackendConnection: io.sqp.proxy.testhelpers.DummyBackend@75c0590f
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.BackendConnectionPool closeConnection
+INFO: Closed BackendConnection: io.sqp.proxy.testhelpers.DummyBackendConnection@364872 with ID: 0
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.BackendConnectionPool createBackend
+INFO: Created BackendConnection: io.sqp.proxy.testhelpers.DummyBackend@3b60c5f5
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.BackendConnectionPool createBackend
+INFO: Created BackendConnection: io.sqp.proxy.testhelpers.DummyBackend@307edcbe
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.BackendConnectionPool closeConnection
+INFO: Closed BackendConnection: io.sqp.proxy.testhelpers.DummyBackendConnection@69251c0 with ID: 1
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.BackendConnectionPool createBackend
+INFO: Created BackendConnection: io.sqp.proxy.testhelpers.DummyBackend@4921496b
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.BackendConnectionPool createConnection
+INFO: Queued BackendConnection creation
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.BackendConnectionPool closeConnection
+INFO: Closed BackendConnection: io.sqp.proxy.testhelpers.DummyBackendConnection@364872 with ID: 0
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.BackendConnectionPool closeConnection
+INFO: Taking a new connection request from the queue
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.BackendConnectionPool createBackend
+INFO: Created BackendConnection: io.sqp.proxy.testhelpers.DummyBackend@7f738d9f
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.BackendConnectionPool createConnection
+INFO: Queued BackendConnection creation
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.BackendConnectionPool createBackend
+INFO: Created BackendConnection: io.sqp.proxy.testhelpers.DummyBackend@571f2681
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.BackendConnectionPool createConnection
+INFO: Queued BackendConnection creation
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.BackendConnectionPool createConnection
+WARNING: The connection pool and queue are full. Discarding a connection.
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.BackendConnectionPool closeConnection
+INFO: Closed BackendConnection: io.sqp.proxy.testhelpers.DummyBackendConnection@364872 with ID: 0
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.BackendConnectionPool closeConnection
+INFO: Taking a new connection request from the queue
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.BackendConnectionPool closeConnection
+INFO: Closed BackendConnection: io.sqp.proxy.testhelpers.DummyBackendConnection@69251c0 with ID: 1
+]]></system-err>
+</testsuite>

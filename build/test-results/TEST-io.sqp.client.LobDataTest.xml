@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.sqp.client.LobDataTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-09-23T16:39:17" hostname="ub-stefan" time="25.004">
+  <properties/>
+  <testcase name="CanFetchBlob" classname="io.sqp.client.LobDataTest" time="20.069"/>
+  <testcase name="CanSendBlob" classname="io.sqp.client.LobDataTest" time="4.219"/>
+  <testcase name="CanSendClob" classname="io.sqp.client.LobDataTest" time="0.134"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

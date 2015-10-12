@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.sqp.client.impl.SqpConnectionImplTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2015-09-23T16:39:12" hostname="ub-stefan" time="31.874">
+  <properties/>
+  <testcase name="CursorDoesAutoFetch" classname="io.sqp.client.impl.SqpConnectionImplTest" time="0.04"/>
+  <testcase name="SameCursorIdIsSameServerCursor" classname="io.sqp.client.impl.SqpConnectionImplTest" time="0.038"/>
+  <testcase name="CursorDoesAutoFetch" classname="io.sqp.client.impl.SqpConnectionImplTest" time="0.023"/>
+  <testcase name="SameCursorIdIsSameServerCursor" classname="io.sqp.client.impl.SqpConnectionImplTest" time="0.046"/>
+  <testcase name="CursorDoesAutoFetch" classname="io.sqp.client.impl.SqpConnectionImplTest" time="0.013"/>
+  <testcase name="NativeTransbaseDateTimeHasSpecifiers" classname="io.sqp.client.impl.SqpConnectionImplTest" time="0.006"/>
+  <testcase name="SameCursorIdIsSameServerCursor" classname="io.sqp.client.impl.SqpConnectionImplTest" time="0.02"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Sep 23, 2015 6:39:12 PM io.sqp.proxy.ClientSession handleError
+INFO: Handling an CursorProblem error: The cursor Cursor6 does not exist
+Sep 23, 2015 6:39:12 PM io.sqp.client.impl.SqpConnectionImpl handleError
+INFO: Handling Error: The cursor Cursor6 does not exist
+io.sqp.client.exceptions.ErrorResponseException: The cursor Cursor6 does not exist
+	at io.sqp.client.impl.MessageHandler.handleSqpMessage(MessageHandler.java:137)
+	at io.sqp.client.impl.MessageHandler.receiveBinMessage(MessageHandler.java:111)
+	at io.sqp.client.impl.MessageHandler$$Lambda$94/345230224.onMessage(Unknown Source)
+	at org.glassfish.tyrus.core.TyrusSession.notifyMessageHandlers(TyrusSession.java:576)
+	at org.glassfish.tyrus.core.TyrusEndpointWrapper.onMessage(TyrusEndpointWrapper.java:816)
+	at org.glassfish.tyrus.core.TyrusWebSocket.onMessage(TyrusWebSocket.java:199)
+	at org.glassfish.tyrus.core.frame.BinaryFrame.respond(BinaryFrame.java:94)
+	at org.glassfish.tyrus.core.ProtocolHandler.process(ProtocolHandler.java:807)
+	at org.glassfish.tyrus.client.TyrusClientEngine$TyrusReadHandler.handle(TyrusClientEngine.java:747)
+	at org.glassfish.tyrus.container.grizzly.client.GrizzlyClientFilter$ProcessTask.execute(GrizzlyClientFilter.java:476)
+	at org.glassfish.tyrus.container.grizzly.client.TaskProcessor.processTask(TaskProcessor.java:114)
+	at org.glassfish.tyrus.container.grizzly.client.TaskProcessor.processTask(TaskProcessor.java:91)
+	at org.glassfish.tyrus.container.grizzly.client.GrizzlyClientFilter.handleRead(GrizzlyClientFilter.java:272)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:561)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.lang.Thread.run(Thread.java:745)
+
+Sep 23, 2015 6:39:15 PM io.sqp.proxy.ClientSession handleError
+INFO: Handling an CursorProblem error: The cursor Cursor6 does not exist
+Sep 23, 2015 6:39:16 PM io.sqp.client.impl.SqpConnectionImpl handleError
+INFO: Handling Error: The cursor Cursor6 does not exist
+io.sqp.client.exceptions.ErrorResponseException: The cursor Cursor6 does not exist
+	at io.sqp.client.impl.MessageHandler.handleSqpMessage(MessageHandler.java:137)
+	at io.sqp.client.impl.MessageHandler.receiveBinMessage(MessageHandler.java:111)
+	at io.sqp.client.impl.MessageHandler$$Lambda$94/345230224.onMessage(Unknown Source)
+	at org.glassfish.tyrus.core.TyrusSession.notifyMessageHandlers(TyrusSession.java:576)
+	at org.glassfish.tyrus.core.TyrusEndpointWrapper.onMessage(TyrusEndpointWrapper.java:816)
+	at org.glassfish.tyrus.core.TyrusWebSocket.onMessage(TyrusWebSocket.java:199)
+	at org.glassfish.tyrus.core.frame.BinaryFrame.respond(BinaryFrame.java:94)
+	at org.glassfish.tyrus.core.ProtocolHandler.process(ProtocolHandler.java:807)
+	at org.glassfish.tyrus.client.TyrusClientEngine$TyrusReadHandler.handle(TyrusClientEngine.java:747)
+	at org.glassfish.tyrus.container.grizzly.client.GrizzlyClientFilter$ProcessTask.execute(GrizzlyClientFilter.java:476)
+	at org.glassfish.tyrus.container.grizzly.client.TaskProcessor.processTask(TaskProcessor.java:114)
+	at org.glassfish.tyrus.container.grizzly.client.TaskProcessor.processTask(TaskProcessor.java:91)
+	at org.glassfish.tyrus.container.grizzly.client.GrizzlyClientFilter.handleRead(GrizzlyClientFilter.java:272)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:561)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.lang.Thread.run(Thread.java:745)
+
+Sep 23, 2015 6:39:44 PM io.sqp.proxy.ClientSession handleError
+INFO: Handling an CursorProblem error: The cursor Cursor6 does not exist
+Sep 23, 2015 6:39:44 PM io.sqp.client.impl.SqpConnectionImpl handleError
+INFO: Handling Error: The cursor Cursor6 does not exist
+io.sqp.client.exceptions.ErrorResponseException: The cursor Cursor6 does not exist
+	at io.sqp.client.impl.MessageHandler.handleSqpMessage(MessageHandler.java:137)
+	at io.sqp.client.impl.MessageHandler.receiveBinMessage(MessageHandler.java:111)
+	at io.sqp.client.impl.MessageHandler$$Lambda$94/345230224.onMessage(Unknown Source)
+	at org.glassfish.tyrus.core.TyrusSession.notifyMessageHandlers(TyrusSession.java:576)
+	at org.glassfish.tyrus.core.TyrusEndpointWrapper.onMessage(TyrusEndpointWrapper.java:816)
+	at org.glassfish.tyrus.core.TyrusWebSocket.onMessage(TyrusWebSocket.java:199)
+	at org.glassfish.tyrus.core.frame.BinaryFrame.respond(BinaryFrame.java:94)
+	at org.glassfish.tyrus.core.ProtocolHandler.process(ProtocolHandler.java:807)
+	at org.glassfish.tyrus.client.TyrusClientEngine$TyrusReadHandler.handle(TyrusClientEngine.java:747)
+	at org.glassfish.tyrus.container.grizzly.client.GrizzlyClientFilter$ProcessTask.execute(GrizzlyClientFilter.java:476)
+	at org.glassfish.tyrus.container.grizzly.client.TaskProcessor.processTask(TaskProcessor.java:114)
+	at org.glassfish.tyrus.container.grizzly.client.TaskProcessor.processTask(TaskProcessor.java:91)
+	at org.glassfish.tyrus.container.grizzly.client.GrizzlyClientFilter.handleRead(GrizzlyClientFilter.java:272)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:561)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.lang.Thread.run(Thread.java:745)
+
+]]></system-err>
+</testsuite>

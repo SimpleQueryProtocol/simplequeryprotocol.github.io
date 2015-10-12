@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.sqp.proxy.ClientSessionTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2015-09-23T16:39:09" hostname="ub-stefan" time="0.112">
+  <properties/>
+  <testcase name="binaryHelloMessageSetsBinaryFormat" classname="io.sqp.proxy.ClientSessionTest" time="0.019"/>
+  <testcase name="failedConnectionSendsErrorAndAborts" classname="io.sqp.proxy.ClientSessionTest" time="0.006"/>
+  <testcase name="firstClientSessionStateIsUninitialized" classname="io.sqp.proxy.ClientSessionTest" time="0.001"/>
+  <testcase name="handleAbortErrorSendsErrorMessageAndClosesConnection" classname="io.sqp.proxy.ClientSessionTest" time="0.004"/>
+  <testcase name="handleRecoverErrorSendsErrorMessageAndResetsConnection" classname="io.sqp.proxy.ClientSessionTest" time="0.007"/>
+  <testcase name="helloMessageConnectsSession" classname="io.sqp.proxy.ClientSessionTest" time="0.003"/>
+  <testcase name="otherMessageWithoutHelloCausesAbortError" classname="io.sqp.proxy.ClientSessionTest" time="0.015"/>
+  <testcase name="sendingReadyMessageToServerFails" classname="io.sqp.proxy.ClientSessionTest" time="0.027"/>
+  <testcase name="twoHelloMessagesCauseRecoverableError" classname="io.sqp.proxy.ClientSessionTest" time="0.01"/>
+  <testcase name="uninitializedClientStateCantRecover" classname="io.sqp.proxy.ClientSessionTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Sep 23, 2015 6:39:09 PM io.sqp.proxy.ClientSession handleBackendConnected
+INFO: Connection to database backend was successful.
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.ClientSession handleError
+INFO: Handling an ServerError error: error
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.ClientSession handleError
+INFO: Aborting: Closing connection to client
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.ClientSession handleError
+INFO: Handling an ServerError error: test error
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.ClientSession handleError
+INFO: Aborting: Closing connection to client
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.ClientSession handleBackendConnected
+INFO: Connection to database backend was successful.
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.ClientSession handleError
+INFO: Handling an ServerError error: test error
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.ClientSession handleBackendConnected
+INFO: Connection to database backend was successful.
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.ClientSession handleError
+INFO: Handling an UnexpectedMessage error: Cannot process message of type 'SimpleQueryMessage' in state Uninitialised. Allowed message types are: HelloMessage.
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.ClientSession handleError
+INFO: Aborting: Closing connection to client
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.ClientSession handleBackendConnected
+INFO: Connection to database backend was successful.
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.ClientSession handleError
+INFO: Handling an UnexpectedMessage error: Cannot process message of type 'ReadyMessage' in state Ready. Allowed message types are: SimpleQueryMessage, PrepareQueryMessage, ExecuteQueryMessage, FetchDataMessage, ReleaseMessage, InformationRequestMessage, SetFeatureMessage, TypeMappingMessage, CommitTransactionMessage, RollbackTransactionMessage, LobAnnouncementMessage, LobRequestMessage.
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.ClientSession handleBackendConnected
+INFO: Connection to database backend was successful.
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.ClientSession handleError
+INFO: Handling an UnexpectedMessage error: Cannot process message of type 'HelloMessage' in state Ready. Allowed message types are: SimpleQueryMessage, PrepareQueryMessage, ExecuteQueryMessage, FetchDataMessage, ReleaseMessage, InformationRequestMessage, SetFeatureMessage, TypeMappingMessage, CommitTransactionMessage, RollbackTransactionMessage, LobAnnouncementMessage, LobRequestMessage.
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.ClientSession handleError
+INFO: Handling an InvalidState error: Cannot recover from state 'Uninitialised'. Closing.
+Sep 23, 2015 6:39:09 PM io.sqp.proxy.ClientSession handleError
+INFO: Aborting: Closing connection to client
+]]></system-err>
+</testsuite>

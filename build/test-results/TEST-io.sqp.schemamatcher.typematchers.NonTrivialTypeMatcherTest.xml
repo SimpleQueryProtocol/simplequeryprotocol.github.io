@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.sqp.schemamatcher.typematchers.NonTrivialTypeMatcherTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2015-09-23T16:39:09" hostname="ub-stefan" time="0.002">
+  <properties/>
+  <testcase name="FormatDifferentMisMatch" classname="io.sqp.schemamatcher.typematchers.NonTrivialTypeMatcherTest" time="0.001"/>
+  <testcase name="FormatOneDefinedMatch" classname="io.sqp.schemamatcher.typematchers.NonTrivialTypeMatcherTest" time="0.0"/>
+  <testcase name="FormatOneDefinedMisMatch" classname="io.sqp.schemamatcher.typematchers.NonTrivialTypeMatcherTest" time="0.001"/>
+  <testcase name="FormatSameMatch" classname="io.sqp.schemamatcher.typematchers.NonTrivialTypeMatcherTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

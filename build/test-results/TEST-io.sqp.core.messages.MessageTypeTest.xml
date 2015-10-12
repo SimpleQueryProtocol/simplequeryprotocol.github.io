@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.sqp.core.messages.MessageTypeTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2015-09-23T16:39:08" hostname="ub-stefan" time="0.015">
+  <properties/>
+  <testcase name="allMessageTypesHaveEnumValues" classname="io.sqp.core.messages.MessageTypeTest" time="0.004"/>
+  <testcase name="allTypeEnumsHaveDifferentIds" classname="io.sqp.core.messages.MessageTypeTest" time="0.006"/>
+  <testcase name="allTypeEnumsLinkDifferentTypes" classname="io.sqp.core.messages.MessageTypeTest" time="0.002"/>
+  <testcase name="allTypeEnumsLinkTypesWithSameName" classname="io.sqp.core.messages.MessageTypeTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

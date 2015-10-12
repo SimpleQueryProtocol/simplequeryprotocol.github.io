@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.sqp.client.CursorTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2015-09-23T16:39:12" hostname="ub-stefan" time="32.419">
+  <properties/>
+  <testcase name="CanGetNativeData" classname="io.sqp.client.CursorTest" time="0.02"/>
+  <testcase name="CanGetNativeDataAndQuicklyMapIt" classname="io.sqp.client.CursorTest" time="0.019"/>
+  <testcase name="ClosedCursorIsClosed" classname="io.sqp.client.CursorTest" time="0.011"/>
+  <testcase name="ConnectionCloseClosesCursor" classname="io.sqp.client.CursorTest" time="0.007"/>
+  <testcase name="SimpleQuerySelectWorks" classname="io.sqp.client.CursorTest" time="0.011"/>
+  <testcase name="SimpleQueryWithScrollableCursorWorks" classname="io.sqp.client.CursorTest" time="0.012"/>
+  <testcase name="TwoDifferentCursorsAtSameTime" classname="io.sqp.client.CursorTest" time="0.039"/>
+  <testcase name="ClosedCursorIsClosed" classname="io.sqp.client.CursorTest" time="0.009"/>
+  <testcase name="ConnectionCloseClosesCursor" classname="io.sqp.client.CursorTest" time="0.013"/>
+  <testcase name="SimpleQuerySelectWorks" classname="io.sqp.client.CursorTest" time="0.016"/>
+  <testcase name="SimpleQueryWithScrollableCursorWorks" classname="io.sqp.client.CursorTest" time="0.012"/>
+  <testcase name="TwoDifferentCursorsAtSameTime" classname="io.sqp.client.CursorTest" time="0.03"/>
+  <testcase name="CanGetNativeTransbaseDateTimeValue" classname="io.sqp.client.CursorTest" time="0.018"/>
+  <testcase name="ClosedCursorIsClosed" classname="io.sqp.client.CursorTest" time="0.004"/>
+  <testcase name="ConnectionCloseClosesCursor" classname="io.sqp.client.CursorTest" time="0.003"/>
+  <testcase name="SimpleQuerySelectWorks" classname="io.sqp.client.CursorTest" time="0.009"/>
+  <testcase name="SimpleQueryWithScrollableCursorWorks" classname="io.sqp.client.CursorTest" time="0.006"/>
+  <testcase name="TwoDifferentCursorsAtSameTime" classname="io.sqp.client.CursorTest" time="0.013"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Sep 23, 2015 6:39:12 PM io.sqp.client.impl.SqpConnectionImpl close
+INFO: Closing connection.
+Sep 23, 2015 6:39:16 PM io.sqp.client.impl.SqpConnectionImpl close
+INFO: Closing connection.
+Sep 23, 2015 6:39:44 PM io.sqp.client.impl.SqpConnectionImpl close
+INFO: Closing connection.
+]]></system-err>
+</testsuite>

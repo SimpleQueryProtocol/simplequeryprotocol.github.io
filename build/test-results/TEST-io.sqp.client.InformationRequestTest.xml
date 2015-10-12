@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.sqp.client.InformationRequestTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2015-09-23T16:39:12" hostname="ub-stefan" time="32.359">
+  <properties/>
+  <testcase name="InformationRequestForBackendInformation" classname="io.sqp.client.InformationRequestTest" time="0.007"/>
+  <testcase name="InformationRequestForProxyInformation" classname="io.sqp.client.InformationRequestTest" time="0.007"/>
+  <testcase name="InformationRequestWithWrongResultType" classname="io.sqp.client.InformationRequestTest" time="0.003"/>
+  <testcase name="RequestPostgresSpecificTypeSchema" classname="io.sqp.client.InformationRequestTest" time="0.006"/>
+  <testcase name="RequestSqpTypeSchema" classname="io.sqp.client.InformationRequestTest" time="0.005"/>
+  <testcase name="InformationRequestForBackendInformation" classname="io.sqp.client.InformationRequestTest" time="0.004"/>
+  <testcase name="InformationRequestForProxyInformation" classname="io.sqp.client.InformationRequestTest" time="0.002"/>
+  <testcase name="InformationRequestWithWrongResultType" classname="io.sqp.client.InformationRequestTest" time="0.004"/>
+  <testcase name="RequestSqpTypeSchema" classname="io.sqp.client.InformationRequestTest" time="0.004"/>
+  <testcase name="InformationRequestForBackendInformation" classname="io.sqp.client.InformationRequestTest" time="0.002"/>
+  <testcase name="InformationRequestForProxyInformation" classname="io.sqp.client.InformationRequestTest" time="0.001"/>
+  <testcase name="InformationRequestWithWrongResultType" classname="io.sqp.client.InformationRequestTest" time="0.001"/>
+  <testcase name="RequestSqpTypeSchema" classname="io.sqp.client.InformationRequestTest" time="0.007"/>
+  <testcase name="RequestTransbaseRangedDateTimeSchema" classname="io.sqp.client.InformationRequestTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Sep 23, 2015 6:39:12 PM io.sqp.proxy.InformationProvider getTypeSchema
+INFO: Cannot find type 'PG_POINT'. Checking backend's type repository.
+Sep 23, 2015 6:39:44 PM io.sqp.proxy.InformationProvider getTypeSchema
+INFO: Cannot find type 'tb_datetime[mo:hh]'. Checking backend's type repository.
+]]></system-err>
+</testsuite>

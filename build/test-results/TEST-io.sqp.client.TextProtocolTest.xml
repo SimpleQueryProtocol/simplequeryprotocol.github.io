@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.sqp.client.TextProtocolTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2015-09-23T16:39:10" hostname="ub-stefan" time="33.586">
+  <properties/>
+  <testcase name="TextConnectAndClose" classname="io.sqp.client.TextProtocolTest" time="0.048"/>
+  <testcase name="TextInformationRequest" classname="io.sqp.client.TextProtocolTest" time="0.03"/>
+  <testcase name="TextMappedTypeQuery" classname="io.sqp.client.TextProtocolTest" time="0.464"/>
+  <testcase name="TextParameterBindWorks" classname="io.sqp.client.TextProtocolTest" time="0.063"/>
+  <testcase name="TextSimpleQueryInsert" classname="io.sqp.client.TextProtocolTest" time="0.006"/>
+  <testcase name="TextConnectAndClose" classname="io.sqp.client.TextProtocolTest" time="0.036"/>
+  <testcase name="TextInformationRequest" classname="io.sqp.client.TextProtocolTest" time="0.013"/>
+  <testcase name="TextParameterBindWorks" classname="io.sqp.client.TextProtocolTest" time="0.118"/>
+  <testcase name="TextSimpleQueryInsert" classname="io.sqp.client.TextProtocolTest" time="0.005"/>
+  <testcase name="TextConnectAndClose" classname="io.sqp.client.TextProtocolTest" time="0.029"/>
+  <testcase name="TextInformationRequest" classname="io.sqp.client.TextProtocolTest" time="0.002"/>
+  <testcase name="TextMappedTypeQuery" classname="io.sqp.client.TextProtocolTest" time="0.031"/>
+  <testcase name="TextParameterBindWorks" classname="io.sqp.client.TextProtocolTest" time="0.021"/>
+  <testcase name="TextSimpleQueryInsert" classname="io.sqp.client.TextProtocolTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Sep 23, 2015 6:39:10 PM io.sqp.client.impl.SqpConnectionImpl connect
+INFO: Attempting to connect to 'ws://localhost:8080/'
+Sep 23, 2015 6:39:10 PM io.sqp.proxy.vertx.VertxClientConnection <init>
+INFO: New client connected via websocket.
+Sep 23, 2015 6:39:10 PM io.sqp.client.impl.SqpConnectionImpl onOpen
+INFO: Established connection.
+Sep 23, 2015 6:39:10 PM io.sqp.proxy.ClientSession handleBackendConnected
+INFO: Connection to database backend was successful.
+Sep 23, 2015 6:39:10 PM io.sqp.client.impl.SqpConnectionImpl close
+INFO: Closing connection.
+Sep 23, 2015 6:39:14 PM io.sqp.client.impl.SqpConnectionImpl connect
+INFO: Attempting to connect to 'ws://localhost:8080/'
+Sep 23, 2015 6:39:14 PM io.sqp.proxy.vertx.VertxClientConnection <init>
+INFO: New client connected via websocket.
+Sep 23, 2015 6:39:14 PM io.sqp.client.impl.SqpConnectionImpl onOpen
+INFO: Established connection.
+Sep 23, 2015 6:39:14 PM io.sqp.proxy.ClientSession handleBackendConnected
+INFO: Connection to database backend was successful.
+Sep 23, 2015 6:39:14 PM io.sqp.client.impl.SqpConnectionImpl close
+INFO: Closing connection.
+Sep 23, 2015 6:39:43 PM io.sqp.client.impl.SqpConnectionImpl connect
+INFO: Attempting to connect to 'ws://localhost:8080/'
+Sep 23, 2015 6:39:43 PM io.sqp.proxy.vertx.VertxClientConnection <init>
+INFO: New client connected via websocket.
+Sep 23, 2015 6:39:43 PM io.sqp.client.impl.SqpConnectionImpl onOpen
+INFO: Established connection.
+Sep 23, 2015 6:39:43 PM io.sqp.proxy.ClientSession handleBackendConnected
+INFO: Connection to database backend was successful.
+Sep 23, 2015 6:39:43 PM io.sqp.client.impl.SqpConnectionImpl close
+INFO: Closing connection.
+]]></system-err>
+</testsuite>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.sqp.client.PreparedStatementTest" tests="24" skipped="0" failures="0" errors="0" timestamp="2015-09-23T16:39:13" hostname="ub-stefan" time="32.226">
+  <properties/>
+  <testcase name="CanUseNativePGDataType" classname="io.sqp.client.PreparedStatementTest" time="0.031"/>
+  <testcase name="CanUsePreparedStatementTwiceWithParameters" classname="io.sqp.client.PreparedStatementTest" time="0.032"/>
+  <testcase name="CanUsePreparedStatementWithSimpleInsert" classname="io.sqp.client.PreparedStatementTest" time="0.023"/>
+  <testcase name="CanUseTwoPreparedStatementsInParallel" classname="io.sqp.client.PreparedStatementTest" time="0.022"/>
+  <testcase name="ClosedStatementCanNotBeExecuted" classname="io.sqp.client.PreparedStatementTest" time="0.003"/>
+  <testcase name="ConnectionCloseClosesPreparedStmt" classname="io.sqp.client.PreparedStatementTest" time="0.002"/>
+  <testcase name="NativeTypeSendAndReceive" classname="io.sqp.client.PreparedStatementTest" time="0.039"/>
+  <testcase name="ParameterBatchBindingWorks" classname="io.sqp.client.PreparedStatementTest" time="0.032"/>
+  <testcase name="SimpleParameterBindWorks" classname="io.sqp.client.PreparedStatementTest" time="0.016"/>
+  <testcase name="CanUsePreparedStatementTwiceWithParameters" classname="io.sqp.client.PreparedStatementTest" time="0.035"/>
+  <testcase name="CanUsePreparedStatementWithSimpleInsert" classname="io.sqp.client.PreparedStatementTest" time="0.045"/>
+  <testcase name="CanUseTwoPreparedStatementsInParallel" classname="io.sqp.client.PreparedStatementTest" time="0.02"/>
+  <testcase name="ClosedStatementCanNotBeExecuted" classname="io.sqp.client.PreparedStatementTest" time="0.004"/>
+  <testcase name="ConnectionCloseClosesPreparedStmt" classname="io.sqp.client.PreparedStatementTest" time="0.001"/>
+  <testcase name="ParameterBatchBindingWorks" classname="io.sqp.client.PreparedStatementTest" time="0.028"/>
+  <testcase name="SimpleParameterBindWorks" classname="io.sqp.client.PreparedStatementTest" time="0.013"/>
+  <testcase name="CanUseNativeTransbaseDataType" classname="io.sqp.client.PreparedStatementTest" time="0.017"/>
+  <testcase name="CanUsePreparedStatementTwiceWithParameters" classname="io.sqp.client.PreparedStatementTest" time="0.028"/>
+  <testcase name="CanUsePreparedStatementWithSimpleInsert" classname="io.sqp.client.PreparedStatementTest" time="0.011"/>
+  <testcase name="CanUseTwoPreparedStatementsInParallel" classname="io.sqp.client.PreparedStatementTest" time="0.023"/>
+  <testcase name="ClosedStatementCanNotBeExecuted" classname="io.sqp.client.PreparedStatementTest" time="0.003"/>
+  <testcase name="ConnectionCloseClosesPreparedStmt" classname="io.sqp.client.PreparedStatementTest" time="0.001"/>
+  <testcase name="ParameterBatchBindingWorks" classname="io.sqp.client.PreparedStatementTest" time="0.023"/>
+  <testcase name="SimpleParameterBindWorks" classname="io.sqp.client.PreparedStatementTest" time="0.022"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Sep 23, 2015 6:39:13 PM io.sqp.client.impl.SqpConnectionImpl close
+INFO: Closing connection.
+Sep 23, 2015 6:39:16 PM io.sqp.client.impl.SqpConnectionImpl close
+INFO: Closing connection.
+Sep 23, 2015 6:39:45 PM io.sqp.client.impl.SqpConnectionImpl close
+INFO: Closing connection.
+]]></system-err>
+</testsuite>

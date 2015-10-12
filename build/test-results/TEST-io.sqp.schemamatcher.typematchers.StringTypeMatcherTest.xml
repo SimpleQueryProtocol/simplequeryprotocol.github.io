@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.sqp.schemamatcher.typematchers.StringTypeMatcherTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2015-09-23T16:39:09" hostname="ub-stefan" time="0.006">
+  <properties/>
+  <testcase name="StringOneFormatMatch" classname="io.sqp.schemamatcher.typematchers.StringTypeMatcherTest" time="0.0"/>
+  <testcase name="StringOneFormatMisMatch" classname="io.sqp.schemamatcher.typematchers.StringTypeMatcherTest" time="0.0"/>
+  <testcase name="StringOneWithMaxLengthMatch" classname="io.sqp.schemamatcher.typematchers.StringTypeMatcherTest" time="0.001"/>
+  <testcase name="StringOneWithMaxLengthMisMatch" classname="io.sqp.schemamatcher.typematchers.StringTypeMatcherTest" time="0.0"/>
+  <testcase name="StringOneWithMinLengthMatch" classname="io.sqp.schemamatcher.typematchers.StringTypeMatcherTest" time="0.0"/>
+  <testcase name="StringOneWithMinLengthMisMatch" classname="io.sqp.schemamatcher.typematchers.StringTypeMatcherTest" time="0.0"/>
+  <testcase name="StringSameFormatMatch" classname="io.sqp.schemamatcher.typematchers.StringTypeMatcherTest" time="0.001"/>
+  <testcase name="StringTypesMatch" classname="io.sqp.schemamatcher.typematchers.StringTypeMatcherTest" time="0.0"/>
+  <testcase name="StringWithGreaterMaxLengthMisMatch" classname="io.sqp.schemamatcher.typematchers.StringTypeMatcherTest" time="0.0"/>
+  <testcase name="StringWithGreaterMinLengthMatch" classname="io.sqp.schemamatcher.typematchers.StringTypeMatcherTest" time="0.0"/>
+  <testcase name="StringWithSameMaxLengthMatch" classname="io.sqp.schemamatcher.typematchers.StringTypeMatcherTest" time="0.0"/>
+  <testcase name="StringWithSameMinLengthMatch" classname="io.sqp.schemamatcher.typematchers.StringTypeMatcherTest" time="0.0"/>
+  <testcase name="StringWithSmallerMaxLengthMatch" classname="io.sqp.schemamatcher.typematchers.StringTypeMatcherTest" time="0.0"/>
+  <testcase name="StringWithSmallerMinLengthMisMatch" classname="io.sqp.schemamatcher.typematchers.StringTypeMatcherTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
